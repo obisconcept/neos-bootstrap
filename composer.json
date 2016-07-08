@@ -11,7 +11,7 @@
     "support": {
         "email": "dev@obis-concept.de"
     },
-    "description": "Bootstrap package",
+    "description": "A Neos CMS package to integrate Twitter Bootstrap, jQuery and Font Awesome. Besides it integrates some Bootstrap based node types.",
     "license": ["MIT"],
     "require": {
         "typo3/neos": "~2.2.0",
