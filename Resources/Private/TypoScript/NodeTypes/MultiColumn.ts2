@@ -8,16 +8,16 @@ prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
 prototype(TYPO3.Neos.NodeTypes:FourColumn) {
 
     columns = TYPO3.TypoScript:Collection {
-        itemRenderer = ObisConcept.Bootstrap:FourColumnItem
+        itemRenderer = ObisConcept.NeosBootstrap:FourColumnItem
     }
 
 }
 
-prototype(ObisConcept.Bootstrap:SixColumn) >
-prototype(ObisConcept.Bootstrap:SixColumn) < prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
+prototype(ObisConcept.NeosBootstrap:SixColumn) >
+prototype(ObisConcept.NeosBootstrap:SixColumn) < prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
 
     columns = TYPO3.TypoScript:Collection {
-        itemRenderer = ObisConcept.Bootstrap:SixColumnItem
+        itemRenderer = ObisConcept.NeosBootstrap:SixColumnItem
     }
 
 }

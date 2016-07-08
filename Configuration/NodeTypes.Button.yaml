@@ -1,4 +1,4 @@
-'ObisConcept.Bootstrap:Button':
+'ObisConcept.NeosBootstrap:Button':
   superTypes:
     'TYPO3.Neos:Content': TRUE
   ui:

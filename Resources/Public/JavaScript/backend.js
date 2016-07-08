@@ -12,9 +12,9 @@ $(document).ready(function () {
     bootstrapFullCss = $('#bootstrap-css').attr('href').replace('main', 'main-backend-full');
     bootstrapCss = $('#bootstrap-css').attr('href');
 
-    bootstrapHalfJs = $('#bootstrap-js').attr('href').replace('bootstrap', 'bootstrap-backend-half');
-    bootstrapFullJs = $('#bootstrap-js').attr('href').replace('bootstrap', 'bootstrap-backend-full');
-    bootstrapJs = $('#bootstrap-js').attr('href');
+    bootstrapHalfJs = $('#bootstrap-js').attr('src').replace('bootstrap', 'bootstrap-backend-half');
+    bootstrapFullJs = $('#bootstrap-js').attr('src').replace('bootstrap', 'bootstrap-backend-full');
+    bootstrapJs = $('#bootstrap-js').attr('src');
 
     $('body').on('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd', function(event) {
 

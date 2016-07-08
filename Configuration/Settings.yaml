@@ -2,9 +2,9 @@ TYPO3:
   Neos:
     typoScript:
       autoInclude:
-        'ObisConcept.Bootstrap': TRUE
+        'ObisConcept.NeosBootstrap': TRUE
 
     userInterface:
       translation:
         autoInclude:
-          'ObisConcept.Bootstrap': ['NodeTypes/*']
+          'ObisConcept.NeosBootstrap': ['NodeTypes/*']

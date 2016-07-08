@@ -1,5 +1,5 @@
 prototype(TYPO3.Neos.NodeTypes:Menu) {
 
-    templatePath = 'resource://ObisConcept.Bootstrap/Private/Templates/NodeTypes/Menu.html'
+    templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Menu.html'
 
 }

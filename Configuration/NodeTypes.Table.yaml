@@ -1,4 +1,4 @@
-'ObisConcept.Bootstrap:Table':
+'ObisConcept.NeosBootstrap:Table':
   superTypes:
     'TYPO3.Neos:Content': TRUE
     'TYPO3.Neos.NodeTypes:TextMixin': TRUE

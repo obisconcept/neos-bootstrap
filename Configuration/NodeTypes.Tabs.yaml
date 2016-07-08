@@ -1,9 +1,9 @@
-'ObisConcept.Bootstrap:Tabs':
+'ObisConcept.NeosBootstrap:Tabs':
   superTypes:
     'TYPO3.Neos:Content': TRUE
   childNodes:
     tabCollection:
-      type: 'ObisConcept.Bootstrap:TabCollection'
+      type: 'ObisConcept.NeosBootstrap:TabCollection'
   constraints:
     nodeTypes:
       '*': FALSE
@@ -36,18 +36,18 @@
               'justified':
                 label: i18n
 
-'ObisConcept.Bootstrap:TabCollection':
+'ObisConcept.NeosBootstrap:TabCollection':
   superTypes:
     'TYPO3.Neos:ContentCollection': TRUE
   childNodes:
     tabOne:
-      type: 'ObisConcept.Bootstrap:Tab'
+      type: 'ObisConcept.NeosBootstrap:Tab'
   constraints:
     nodeTypes:
-      'ObisConcept.Bootstrap:Tab': TRUE
+      'ObisConcept.NeosBootstrap:Tab': TRUE
       '*': FALSE
 
-'ObisConcept.Bootstrap:Tab':
+'ObisConcept.NeosBootstrap:Tab':
   superTypes:
     'TYPO3.Neos:Content': TRUE
   childNodes:
@@ -79,4 +79,4 @@
 'TYPO3.Neos:ContentCollection':
   constraints:
     nodeTypes:
-      'ObisConcept.Bootstrap:Tab': FALSE
+      'ObisConcept.NeosBootstrap:Tab': FALSE

@@ -1,5 +1,5 @@
 prototype(TYPO3.Neos.NodeTypes:TextWithImage) {
 
-    templatePath = 'resource://ObisConcept.Bootstrap/Private/Templates/NodeTypes/TextWithImage.html'
+    templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/TextWithImage.html'
 
 }

@@ -55,7 +55,7 @@
               '3-3-3-3':
                 label: '25% / 25% / 25% / 25%'
 
-'ObisConcept.Bootstrap:SixColumn':
+'ObisConcept.NeosBootstrap:SixColumn':
   superTypes:
     'TYPO3.Neos.NodeTypes:Column': TRUE
   ui:

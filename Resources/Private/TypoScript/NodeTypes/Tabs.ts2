@@ -1,10 +1,10 @@
-prototype(ObisConcept.Bootstrap:Tabs) < prototype(TYPO3.Neos:Content) {
+prototype(ObisConcept.NeosBootstrap:Tabs) < prototype(TYPO3.Neos:Content) {
 
-    templatePath = 'resource://ObisConcept.Bootstrap/Private/Templates/NodeTypes/Tabs.html'
+    templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Tabs.html'
 
-    tabArray = ${q(node).children('tabCollection').children('[instanceof ObisConcept.Bootstrap:Tab]')}
+    tabArray = ${q(node).children('tabCollection').children('[instanceof ObisConcept.NeosBootstrap:Tab]')}
 
-    tabCollection = ObisConcept.Bootstrap:TabCollection {
+    tabCollection = ObisConcept.NeosBootstrap:TabCollection {
 
         attributes {
             class = 'tab-content'
@@ -16,7 +16,7 @@ prototype(ObisConcept.Bootstrap:Tabs) < prototype(TYPO3.Neos:Content) {
 
             itemName = 'node'
             iterationName = 'iterator'
-            itemRenderer = ObisConcept.Bootstrap:Tab {
+            itemRenderer = ObisConcept.NeosBootstrap:Tab {
 
                 iterator = ${iterator}
 
@@ -28,11 +28,11 @@ prototype(ObisConcept.Bootstrap:Tabs) < prototype(TYPO3.Neos:Content) {
 
 }
 
-prototype(ObisConcept.Bootstrap:TabCollection) < prototype(TYPO3.Neos:ContentCollection)
+prototype(ObisConcept.NeosBootstrap:TabCollection) < prototype(TYPO3.Neos:ContentCollection)
 
-prototype(ObisConcept.Bootstrap:Tab) < prototype(TYPO3.Neos:Content) {
+prototype(ObisConcept.NeosBootstrap:Tab) < prototype(TYPO3.Neos:Content) {
 
-    templatePath = 'resource://ObisConcept.Bootstrap/Private/Templates/NodeTypes/Tab.html'
+    templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Tab.html'
 
     contentCollection = TYPO3.Neos:ContentCollection {
 

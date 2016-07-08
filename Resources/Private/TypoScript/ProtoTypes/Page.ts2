@@ -22,45 +22,41 @@ prototype(TYPO3.Neos:Page) {
 
         }
 
-        stylesheets {
-            bootstrapCss = TYPO3.TypoScript:Tag {
-                @position = '10'
-                tagName = 'link'
-                attributes {
-                    id = 'bootstrap-css'
-                    media = 'all'
-                    rel = 'stylesheet'
-                    href = TYPO3.TypoScript:ResourceUri {
-                        path = 'resource://ObisConcept.NeosBootstrap/Public/Styles/main.min.css'
-                    }
+        bootstrapCss = TYPO3.TypoScript:Tag {
+            @position = 'before stylesheets'
+            tagName = 'link'
+            attributes {
+                id = 'bootstrap-css'
+                media = 'all'
+                rel = 'stylesheet'
+                href = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://ObisConcept.NeosBootstrap/Public/Styles/main.min.css'
                 }
             }
         }
 
-        javascripts {
-            bootstrapJs = TYPO3.TypoScript:Tag {
-                @position = '10'
-                tagName = 'script'
-                attributes {
-                    id = 'bootstrap-js'
-                    type = 'text/javascript'
-                    src = TYPO3.TypoScript:ResourceUri {
-                        path = 'resource://ObisConcept.NeosBootstrap/Public/JavaScript/bootstrap.min.js'
-                    }
+        bootstrapJs = TYPO3.TypoScript:Tag {
+            @position = 'before javascripts'
+            tagName = 'script'
+            attributes {
+                id = 'bootstrap-js'
+                type = 'text/javascript'
+                src = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://ObisConcept.NeosBootstrap/Public/JavaScript/bootstrap.min.js'
                 }
             }
+        }
 
-            bootstrapBackendJs = TYPO3.TypoScript:Tag {
-                @position = '20'
-                tagName = 'script'
-                attributes {
-                    type = 'text/javascript'
-                    src = TYPO3.TypoScript:ResourceUri {
-                        path = 'resource://ObisConcept.NeosBootstrap/Public/JavaScript/backend.min.js'
-                    }
+        bootstrapBackendJs = TYPO3.TypoScript:Tag {
+            @position = 'after bootstrapJs'
+            tagName = 'script'
+            attributes {
+                type = 'text/javascript'
+                src = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://ObisConcept.NeosBootstrap/Public/JavaScript/backend.min.js'
                 }
-                @if.onlyRenderWhenNotInLiveWorkspace = ${node.context.workspace.name != 'live'}
             }
+            @if.onlyRenderWhenNotInLiveWorkspace = ${node.context.workspace.name != 'live'}
         }
 
     }
