@@ -1,0 +1,99 @@
+'ObisConcept.Bootstrap:Button':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  ui:
+    label: i18n
+    icon: 'icon-external-link'
+    inlineEditable: FALSE
+    inspector:
+      groups:
+        properties:
+          label: i18n
+  properties:
+    label:
+      type: string
+      defaultValue: 'Text'
+      ui:
+        label: i18n
+        inlineEditable: FALSE
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+        aloha:
+          placeholder: i18n
+          autoparagraph: FALSE
+    buttonPosition:
+      type: string
+      defaultValue: 'left'
+      ui:
+        label: i18n
+        inlineEditable: FALSE
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              left:
+                label: i18n
+              right:
+                label: i18n
+    link:
+      type: string
+      ui:
+        label: i18n
+        inlineEditable: FALSE
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/LinkEditor'
+          editorOptions:
+            placeholder: i18n
+    icon:
+      type: string
+      defaultValue: 'fa-chevron-left'
+      ui:
+        label: i18n
+        inlineEditable: FALSE
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              'fa-chevron-left':
+                label: i18n
+              'fa-chevron-right':
+                label: i18n
+              'fa-phone':
+                label: i18n
+              'fa-paper-plane':
+                label: i18n
+              'fa-facebook':
+                label: 'Facebook'
+              'fa-google-plus':
+                label: 'Google+'
+              'fa-twitter':
+                label: 'Twitter'
+              'fa-linkedin':
+                label: 'LinkedIn'
+              'fa-pinterest-p':
+                label: 'Pinterest'
+              'fa-vimeo':
+                label: 'Vimeo'
+    iconPosition:
+      type: string
+      defaultValue: 'left'
+      ui:
+        label: i18n
+        inlineEditable: FALSE
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              left:
+                label: i18n
+              right:
+                label: i18n

@@ -1,0 +1,40 @@
+<f:if condition="{assets}">
+    <f:then>
+        <div{attributes -> f:format.raw()}>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="3"><f:translate id="assetList.headline" source="NodeTypes/AssetList" package="ObisConcept.Bootstrap" /></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <f:for each="{assets}" as="asset">
+                        <tr>
+                            <td>
+                                <f:if condition="{asset.title}">
+                                    <f:then>
+                                        {asset.title}
+                                    </f:then>
+                                    <f:else>
+                                        {asset.resource.filename}
+                                    </f:else>
+                                </f:if>
+                            </td>
+                            <td>{asset.resource.fileSize -> f:format.bytes()}</td>
+                            <td class="clearfix">
+                                <a href="{f:uri.resource(resource: asset.resource)}" target="_blank" class="btn btn-default pull-right"><i class="fa fa-download "></i><span><f:translate id="assetList.download" source="NodeTypes/AssetList" package="ObisConcept.Bootstrap" /></span></a>
+                            </td>
+                        </tr>
+                    </f:for>
+                </tbody>
+            </table>
+        </div>
+    </f:then>
+    <f:else>
+        <f:security.ifAccess privilegeTarget="TYPO3.Neos:Backend.GeneralAccess">
+            <f:if condition="{node.context.workspace.name} != 'live'">
+                <div{attributes -> f:format.raw()}>Empty asset list</div>
+            </f:if>
+        </f:security.ifAccess>
+    </f:else>
+</f:if>

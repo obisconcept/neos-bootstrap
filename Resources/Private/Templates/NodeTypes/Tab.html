@@ -1,0 +1,12 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+
+<f:if condition="{iterator.isFirst}">
+    <f:then>
+        <div role="tabpanel" class="tab-pane active" id="{node.identifier}">
+    </f:then>
+    <f:else>
+        <div role="tabpanel" class="tab-pane" id="{node.identifier}">
+    </f:else>
+</f:if>
+<ts:render path="contentCollection" />
+</div>

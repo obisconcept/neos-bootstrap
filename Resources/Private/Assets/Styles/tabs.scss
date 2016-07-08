@@ -1,0 +1,16 @@
+.nav-pills.nav-tabs > li > a,
+.nav-pills.nav-stacked > li > a,
+.nav-pills.nav-justified > li > a {
+    border-radius: 0px;
+}
+
+.nav-pills.nav-tabs > li > a,
+.nav-pills.nav-justified > li > a {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.nav-pills.nav-stacked > li > a {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}

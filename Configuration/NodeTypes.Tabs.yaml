@@ -1,0 +1,82 @@
+'ObisConcept.Bootstrap:Tabs':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  childNodes:
+    tabCollection:
+      type: 'ObisConcept.Bootstrap:TabCollection'
+  constraints:
+    nodeTypes:
+      '*': FALSE
+  ui:
+    label: 'Tabs'
+    icon: 'icon-columns'
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        'properties':
+          label: i18n
+          position: 10
+  properties:
+    tabsStyle:
+      type: string
+      defaultValue: 'horizontal'
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            placeholder: i18n
+            values:
+              'horizontal':
+                label: i18n
+              'vertical':
+                label: i18n
+              'justified':
+                label: i18n
+
+'ObisConcept.Bootstrap:TabCollection':
+  superTypes:
+    'TYPO3.Neos:ContentCollection': TRUE
+  childNodes:
+    tabOne:
+      type: 'ObisConcept.Bootstrap:Tab'
+  constraints:
+    nodeTypes:
+      'ObisConcept.Bootstrap:Tab': TRUE
+      '*': FALSE
+
+'ObisConcept.Bootstrap:Tab':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  childNodes:
+    contentCollection:
+      type: 'TYPO3.Neos:ContentCollection'
+  constraints:
+    nodeTypes:
+      '*': FALSE
+  ui:
+    label: 'Tab'
+    icon: 'icon-font'
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        'properties':
+          label: i18n
+          position: 10
+  properties:
+    title:
+      type: string
+      defaultValue: 'Tab'
+      ui:
+        label: i18n
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+
+'TYPO3.Neos:ContentCollection':
+  constraints:
+    nodeTypes:
+      'ObisConcept.Bootstrap:Tab': FALSE

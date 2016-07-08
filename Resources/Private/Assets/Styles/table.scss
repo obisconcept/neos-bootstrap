@@ -1,0 +1,82 @@
+table {
+    background-color: transparent;
+}
+
+caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+}
+
+.obisconcept-bootstrap-table table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.obisconcept-bootstrap-table table > thead > tr > th,
+.obisconcept-bootstrap-table table > tbody > tr > th,
+.obisconcept-bootstrap-table table > tfoot > tr > th,
+.obisconcept-bootstrap-table table > thead > tr > td,
+.obisconcept-bootstrap-table table > tbody > tr > td,
+.obisconcept-bootstrap-table table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.obisconcept-bootstrap-table table > thead > tr > th,
+.obisconcept-bootstrap-table table > tbody > tr > th{
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+.obisconcept-bootstrap-table table > caption + thead > tr:first-child > th,
+.obisconcept-bootstrap-table table > colgroup + thead > tr:first-child > th,
+.obisconcept-bootstrap-table table > thead:first-child > tr:first-child > th,
+.obisconcept-bootstrap-table table > tbody:first-child > tr:first-child > th,
+.obisconcept-bootstrap-table table > caption + thead > tr:first-child > td,
+.obisconcept-bootstrap-table table > colgroup + thead > tr:first-child > td,
+.obisconcept-bootstrap-table table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+
+.obisconcept-bootstrap-table table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+
+.obisconcept-bootstrap-table {
+    min-height: .01%;
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .obisconcept-bootstrap-table {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+
+    .obisconcept-bootstrap-table table {
+        margin-bottom: 0;
+    }
+
+    .obisconcept-bootstrap-table table > thead > tr > th,
+    .obisconcept-bootstrap-table table > tbody > tr > th,
+    .obisconcept-bootstrap-table table > tfoot > tr > th,
+    .obisconcept-bootstrap-table table > thead > tr > td,
+    .obisconcept-bootstrap-table table > tbody > tr > td,
+    .obisconcept-bootstrap-table table > tfoot > tr > td {
+        white-space: nowrap;
+    }
+}

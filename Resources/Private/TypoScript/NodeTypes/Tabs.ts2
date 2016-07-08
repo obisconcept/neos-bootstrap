@@ -1,0 +1,43 @@
+prototype(ObisConcept.Bootstrap:Tabs) < prototype(TYPO3.Neos:Content) {
+
+    templatePath = 'resource://ObisConcept.Bootstrap/Private/Templates/NodeTypes/Tabs.html'
+
+    tabArray = ${q(node).children('tabCollection').children('[instanceof ObisConcept.Bootstrap:Tab]')}
+
+    tabCollection = ObisConcept.Bootstrap:TabCollection {
+
+        attributes {
+            class = 'tab-content'
+        }
+
+        nodePath = 'tabCollection'
+
+        content {
+
+            itemName = 'node'
+            iterationName = 'iterator'
+            itemRenderer = ObisConcept.Bootstrap:Tab {
+
+                iterator = ${iterator}
+
+            }
+
+        }
+
+    }
+
+}
+
+prototype(ObisConcept.Bootstrap:TabCollection) < prototype(TYPO3.Neos:ContentCollection)
+
+prototype(ObisConcept.Bootstrap:Tab) < prototype(TYPO3.Neos:Content) {
+
+    templatePath = 'resource://ObisConcept.Bootstrap/Private/Templates/NodeTypes/Tab.html'
+
+    contentCollection = TYPO3.Neos:ContentCollection {
+
+        nodePath = 'contentCollection'
+
+    }
+
+}

@@ -1,0 +1,19 @@
+prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+
+    @override.colCount = ${String.split(q(node).parent().property('layout'), '-')[multiColumnIteration.index]}
+
+    attributes.class = ${'col-sm-' + colCount}
+
+}
+
+prototype(ObisConcept.Bootstrap:FourColumnItem) < prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+
+    attributes.class = ${'col-sm-' + String.toString(String.toInteger(colCount) + 3) + ' col-md-' + String.toString(String.toInteger(colCount) + 1) + ' col-lg-' + colCount}
+
+}
+
+prototype(ObisConcept.Bootstrap:SixColumnItem) < prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+
+    attributes.class = ${'col-xs-' + String.toString(String.toInteger(colCount) + 4) + ' col-sm-' + String.toString(String.toInteger(colCount) + 2) + ' col-md-' + String.toString(String.toInteger(colCount) + 1) + ' col-lg-' + colCount}
+
+}

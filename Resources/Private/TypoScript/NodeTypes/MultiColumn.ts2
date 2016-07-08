@@ -1,0 +1,23 @@
+prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
+
+    attributes.class = 'row'
+    columns.iterationName = 'multiColumnIteration'
+
+}
+
+prototype(TYPO3.Neos.NodeTypes:FourColumn) {
+
+    columns = TYPO3.TypoScript:Collection {
+        itemRenderer = ObisConcept.Bootstrap:FourColumnItem
+    }
+
+}
+
+prototype(ObisConcept.Bootstrap:SixColumn) >
+prototype(ObisConcept.Bootstrap:SixColumn) < prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
+
+    columns = TYPO3.TypoScript:Collection {
+        itemRenderer = ObisConcept.Bootstrap:SixColumnItem
+    }
+
+}

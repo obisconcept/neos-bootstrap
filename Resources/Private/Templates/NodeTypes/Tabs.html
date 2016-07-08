@@ -1,0 +1,68 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+
+<div class="tabs">
+
+    <f:if condition="{node.properties.tabsStyle} == 'horizontal'">
+        <f:then>
+
+            <ul class="nav nav-pills nav-tabs" role="tablist">
+
+        </f:then>
+        <f:else>
+
+            <f:if condition="{node.properties.tabsStyle} == 'vertical'">
+                <f:then>
+
+                    <ul class="nav nav-pills nav-stacked col-md-3" role="tablist">
+
+                </f:then>
+                <f:else>
+
+                    <ul class="nav nav-pills nav-justified" role="tablist">
+
+                </f:else>
+            </f:if>
+
+        </f:else>
+    </f:if>
+    <f:for each="{tabArray}" as="tabNode" iteration="tabIterator">
+        <f:if condition="{tabIterator.isFirst} == 1">
+            <f:then>
+                <li role="presentation" class="active">
+            </f:then>
+            <f:else>
+                <li role="presentation">
+            </f:else>
+        </f:if>
+        <a href="#{tabNode.identifier}" aria-controls="{tabNode.identifier}" role="tab" data-toggle="tab">{tabNode.properties.title}</a>
+        </li>
+    </f:for>
+    </ul>
+
+    <f:if condition="{node.properties.tabsStyle} == 'horizontal'">
+        <f:then>
+
+            <div class="tab-collection">
+
+        </f:then>
+        <f:else>
+
+            <f:if condition="{node.properties.tabsStyle} == 'vertical'">
+                <f:then>
+
+                    <div class="tab-collection col-md-9">
+
+                </f:then>
+                <f:else>
+
+                    <div class="tab-collection">
+
+                </f:else>
+            </f:if>
+
+        </f:else>
+    </f:if>
+    <ts:render path="tabCollection" />
+</div>
+
+</div>

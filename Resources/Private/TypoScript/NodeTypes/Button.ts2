@@ -1,0 +1,12 @@
+prototype(ObisConcept.Bootstrap:Button) < prototype(TYPO3.Neos:Content) {
+
+    templatePath = 'resource://ObisConcept.Bootstrap/Private/Templates/NodeTypes/Button.html'
+
+    linkUriConverted = ${Neos.Link.hasSupportedScheme(this.link) ? Neos.Link.convertUriToObject(this.link, node) : null}
+    linkUriSchema = ${Neos.Link.getScheme(this.link)}
+
+    attributes {
+        class = ${'pull-' + q(node).property('buttonPosition')}
+    }
+
+}

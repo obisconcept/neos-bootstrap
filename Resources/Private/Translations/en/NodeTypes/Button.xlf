@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="ObisConcept.Bootstrap" source-language="en" datatype="plaintext">
+		<body>
+		    <trans-unit id="ui.label" xml:space="preserve">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="groups.properties.label" xml:space="preserve">
+                <source>Properties</source>
+            </trans-unit>
+            <trans-unit id="properties.label" xml:space="preserve">
+                <source>Button label</source>
+            </trans-unit>
+            <trans-unit id="properties.buttonPosition" xml:space="preserve">
+                <source>Button position</source>
+            </trans-unit>
+            <trans-unit id="properties.buttonPosition.selectBoxEditor.values.left" xml:space="preserve">
+                <source>Left</source>
+            </trans-unit>
+            <trans-unit id="properties.buttonPosition.selectBoxEditor.values.right" xml:space="preserve">
+                <source>Right</source>
+            </trans-unit>
+            <trans-unit id="properties.link" xml:space="preserve">
+                <source>Button link</source>
+            </trans-unit>
+            <trans-unit id="properties.icon" xml:space="preserve">
+                <source>Icon</source>
+            </trans-unit>
+            <trans-unit id="properties.icon.selectBoxEditor.values.fa-chevron-left" xml:space="preserve">
+                <source>Arrow left</source>
+            </trans-unit>
+            <trans-unit id="properties.icon.selectBoxEditor.values.fa-chevron-right" xml:space="preserve">
+                <source>Arrow right</source>
+            </trans-unit>
+            <trans-unit id="properties.icon.selectBoxEditor.values.fa-phone" xml:space="preserve">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="properties.icon.selectBoxEditor.values.fa-paper-plane" xml:space="preserve">
+                <source>Paper plane</source>
+            </trans-unit>
+            <trans-unit id="properties.iconPosition" xml:space="preserve">
+                <source>Icon position</source>
+            </trans-unit>
+            <trans-unit id="properties.iconPosition.selectBoxEditor.values.left" xml:space="preserve">
+                <source>Left</source>
+            </trans-unit>
+            <trans-unit id="properties.iconPosition.selectBoxEditor.values.right" xml:space="preserve">
+                <source>Right</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="ObisConcept.Bootstrap" source-language="en" datatype="plaintext" target-language="de">
+		<body>
+		    <trans-unit id="groups.properties" xml:space="preserve">
+                <source>Properties</source>
+                <target xml:lang="de">Eigenschaften</target>
+            </trans-unit>
+            <trans-unit id="properties.title" xml:space="preserve">
+                <source>Tab style</source>
+                <target xml:lang="de">Tab Titel</target>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

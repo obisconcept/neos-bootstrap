@@ -1,0 +1,6 @@
+'TYPO3.Neos.NodeTypes:TextMixin':
+  properties:
+    text:
+      ui:
+        aloha:
+          'table': FALSE

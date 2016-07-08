@@ -1,0 +1,27 @@
+prototype(TYPO3.Neos:Page) {
+
+    head {
+
+        metaViewPort = TYPO3.TypoScript:Tag {
+            @position = 'after characterSetMetaTag'
+            tagName = 'meta'
+            attributes {
+                name = 'viewport'
+                content = 'width=device-width, user-scalable=no, initial-scale=1'
+            }
+        }
+
+        metaIeEdge = TYPO3.TypoScript:Tag {
+
+            @position = 'after metaViewPort'
+            tagName = 'meta'
+            attributes {
+                http-equiv = 'X-UA-Compatible'
+                content = 'IE=edge'
+            }
+
+        }
+
+    }
+
+}

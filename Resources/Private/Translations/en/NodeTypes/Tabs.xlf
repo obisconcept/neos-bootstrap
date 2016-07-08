@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="ObisConcept.Bootstrap" source-language="en" datatype="plaintext">
+		<body>
+		    <trans-unit id="groups.properties" xml:space="preserve">
+                <source>Properties</source>
+            </trans-unit>
+            <trans-unit id="properties.tabsStyle" xml:space="preserve">
+                <source>Tab style</source>
+            </trans-unit>
+            <trans-unit id="properties.tabsStyle.selectBoxEditor.values.horizontal" xml:space="preserve">
+                <source>Horizontal</source>
+            </trans-unit>
+            <trans-unit id="properties.tabsStyle.selectBoxEditor.values.vertical" xml:space="preserve">
+                <source>Vertical</source>
+            </trans-unit>
+            <trans-unit id="properties.tabsStyle.selectBoxEditor.values.justified" xml:space="preserve">
+                <source>Justified</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
