@@ -9,6 +9,7 @@ Besides it integrates some Bootstrap based node types.
 
 ## Installation
 Add the package in your site package composer.json
+
 `"require": {
      "obisconcept/neos-bootstrap": "~1.0.0"
  }`
