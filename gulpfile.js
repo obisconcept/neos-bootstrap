@@ -65,6 +65,16 @@ gulp.task('build-js', function() {
 
     gutil.log('Generate js files ...');
 
+    // Backend js files
+    gulp.src('Resources/Private/Assets/JavaScript/backend.js')
+        .pipe(sourcemaps.init())
+        .pipe(concat('backend.js'))
+        .pipe(gulp.dest('Resources/Public/JavaScript'))
+        .pipe(rename('backend.min.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('Resources/Public/JavaScript'));
+
     // Bootstrap js files
     gulp.src([
         'Resources/Private/Assets/JavaScript/jquery.js',
@@ -108,6 +118,8 @@ gulp.task('build-js', function() {
 
 // Create default task
 gulp.task('default', function() {
+
+    gulp.src('Resources/Private/Assets/Fonts/*.*').pipe(gulp.dest('Resources/Public/Fonts/'));
 
     gulp.src('Resources/Private/Assets/Styles/**/*.scss', {read: false})
         .pipe(watch('Resources/Private/Assets/Styles/**/*.scss', function() {
