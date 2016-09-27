@@ -1,0 +1,16 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#{parentId}" href="#{node.identifier}" aria-expanded="true" aria-controls="{node.identifier}"<f:if condition="{firstOfType} != {node.identifier}"> class="collapsed"</f:if>>
+                {neos:contentElement.editable(property: 'title', tag: 'span')}
+            </a>
+        </h4>
+    </div>
+    <div id="{node.identifier}" class="panel-collapse collapse<f:if condition="{firstOfType} == {node.identifier}"> in</f:if>" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+            {content.contentCollection -> f:format.raw()}
+        </div>
+    </div>
+</div>

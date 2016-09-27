@@ -1,0 +1,49 @@
+'ObisConcept.NeosBootstrap:Collapsibles':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  childNodes:
+    collapsibleCollection:
+      type: 'ObisConcept.NeosBootstrap:CollapsibleCollection'
+  constraints:
+    nodeTypes:
+      '*': FALSE
+  ui:
+    label: i18n
+    icon: 'fa fa-bars'
+    inlineEditable: TRUE
+
+'ObisConcept.NeosBootstrap:CollapsibleCollection':
+  superTypes:
+    'TYPO3.Neos:ContentCollection': TRUE
+  childNodes:
+    collapsibleOne:
+      type: 'ObisConcept.NeosBootstrap:Collapsible'
+  constraints:
+    nodeTypes:
+      'ObisConcept.NeosBootstrap:Collapsible': TRUE
+      '*': FALSE
+
+'ObisConcept.NeosBootstrap:Collapsible':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  childNodes:
+    contentCollection:
+      type: 'TYPO3.Neos:ContentCollection'
+  constraints:
+    nodeTypes:
+      '*': FALSE
+  ui:
+    label: i18n
+    icon: 'fa fa-caret-square-o-down'
+  properties:
+    title:
+      type: string
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          placeholder: i18n
+
+'TYPO3.Neos:ContentCollection':
+  constraints:
+    nodeTypes:
+      'ObisConcept.NeosBootstrap:Collapsible': FALSE

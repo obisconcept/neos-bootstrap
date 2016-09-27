@@ -2,26 +2,30 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
 	<file original="" product-name="ObisConcept.NeosBootstrap" source-language="en" datatype="plaintext" target-language="de">
 		<body>
+				<trans-unit id="ui.label" xml:space="preserve">
+						<source>Tabs</source>
+						<target xml:lang="de">Tabs</target>
+				</trans-unit>
 		    <trans-unit id="groups.properties" xml:space="preserve">
-                <source>Properties</source>
-                <target xml:lang="de">Eigenschaften</target>
-            </trans-unit>
-            <trans-unit id="properties.tabsStyle" xml:space="preserve">
-                <source>Tab style</source>
-                <target xml:lang="de">Tab Stil</target>
-            </trans-unit>
-            <trans-unit id="properties.tabsStyle.selectBoxEditor.values.horizontal" xml:space="preserve">
-                <source>Horizontal</source>
-                <target xml:lang="de">Horizontal</target>
-            </trans-unit>
-            <trans-unit id="properties.tabsStyle.selectBoxEditor.values.vertical" xml:space="preserve">
-                <source>Vertical</source>
-                <target xml:lang="de">Vertikal</target>
-            </trans-unit>
-            <trans-unit id="properties.tabsStyle.selectBoxEditor.values.justified" xml:space="preserve">
-                <source>Justified</source>
-                <target xml:lang="de">Block Zentrierung</target>
-            </trans-unit>
+            <source>Properties</source>
+            <target xml:lang="de">Eigenschaften</target>
+        </trans-unit>
+        <trans-unit id="properties.tabsStyle" xml:space="preserve">
+            <source>Tab style</source>
+            <target xml:lang="de">Tab Stil</target>
+        </trans-unit>
+        <trans-unit id="properties.tabsStyle.selectBoxEditor.values.horizontal" xml:space="preserve">
+            <source>Horizontal</source>
+            <target xml:lang="de">Horizontal</target>
+        </trans-unit>
+        <trans-unit id="properties.tabsStyle.selectBoxEditor.values.vertical" xml:space="preserve">
+            <source>Vertical</source>
+            <target xml:lang="de">Vertikal</target>
+        </trans-unit>
+        <trans-unit id="properties.tabsStyle.selectBoxEditor.values.justified" xml:space="preserve">
+            <source>Justified</source>
+            <target xml:lang="de">Block Zentrierung</target>
+        </trans-unit>
 		</body>
 	</file>
 </xliff>

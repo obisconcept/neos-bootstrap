@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="ObisConcept.NeosBootstrap" source-language="en" datatype="plaintext" target-language="de">
+		<body>
+	    <trans-unit id="ui.label" xml:space="preserve">
+          <source>Collapsible</source>
+          <target xml:lang="de">Klappelement</target>
+      </trans-unit>
+      <trans-unit id="properties.title.aloha.placeholder" xml:space="preserve">
+          <source>Enter title here</source>
+          <target xml:lang="de">Titel hier eingeben</target>
+      </trans-unit>
+		</body>
+	</file>
+</xliff>

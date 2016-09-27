@@ -1,0 +1,40 @@
+prototype(ObisConcept.NeosBootstrap:Collapsibles) < prototype(TYPO3.Neos:Content) {
+
+    templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Collapsibles.html'
+
+    content {
+
+    		collapsibleCollection = ContentCollection {
+      			nodePath = 'collapsibleCollection'
+      			attributes.class = 'panel-group'
+      			attributes.id = ${q(node).parent().property('_identifier')}
+      			attributes.role = 'tablist'
+      			attributes.aria-multiselectable = 'true'
+    		}
+
+	  }
+
+}
+
+prototype(ObisConcept.NeosBootstrap:CollapsibleCollection) < prototype(TYPO3.Neos:ContentCollection)
+
+prototype(ObisConcept.NeosBootstrap:Collapsible) < prototype(TYPO3.Neos:Content) {
+
+    templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Collapsible.html'
+
+    parentId = ${q(node).parent().parent().property('_identifier')}
+
+    firstOfType = ${q(node).parent().parent().children().children().first().property('_identifier')}
+
+
+    content {
+
+        contentCollection = TYPO3.Neos:ContentCollection {
+
+            nodePath = 'contentCollection'
+
+        }
+
+    }
+    
+}

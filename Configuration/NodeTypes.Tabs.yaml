@@ -8,13 +8,14 @@
     nodeTypes:
       '*': FALSE
   ui:
-    label: 'Tabs'
-    icon: 'icon-columns'
+    label: i18n
+    icon: 'fa fa-columns'
     inlineEditable: TRUE
     inspector:
       groups:
         'properties':
           label: i18n
+          icon: 'fa fa-cog'
           position: 10
   properties:
     tabsStyle:
@@ -57,14 +58,9 @@
     nodeTypes:
       '*': FALSE
   ui:
-    label: 'Tab'
-    icon: 'icon-font'
+    label: i18n
+    icon: 'fa fa-square-o'
     inlineEditable: TRUE
-    inspector:
-      groups:
-        'properties':
-          label: i18n
-          position: 10
   properties:
     title:
       type: string
