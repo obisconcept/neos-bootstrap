@@ -36,7 +36,7 @@ prototype(TYPO3.Neos:Page) {
         }
 
         bootstrapJs = TYPO3.TypoScript:Tag {
-            @position = 'before javascripts after jqueryJs'
+            @position = 'before javascripts'
             tagName = 'script'
             attributes {
                 id = 'bootstrap-js'
