@@ -1,5 +1,5 @@
 # neos-bootstrap
-A Neos CMS package to integrate Twitter Bootstrap, jQuery and Font Awesome.
+A Neos CMS package to integrate Twitter Bootstrap and Font Awesome.
 Besides it integrates some Bootstrap based node types.
 
 ## Packages
@@ -9,6 +9,8 @@ Besides it integrates some Bootstrap based node types.
 ## Installation
 Add the package in your site package composer.json
 
-`"require": {
-     "obisconcept/neos-bootstrap": "~1.0.0"
- }`
+```
+"require": {
+     "obisconcept/neos-bootstrap": "~1.0"
+ }
+ ```
