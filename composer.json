@@ -15,7 +15,8 @@
     "license": ["MIT"],
     "require": {
         "typo3/neos": "~2.3.0",
-        "typo3/neos-nodetypes": "~2.3.0"
+        "typo3/neos-nodetypes": "~2.3.0",
+        "obisconcept/neos-jquery": "dev-master"
     },
     "autoload": {
         "psr-0": {

@@ -77,7 +77,6 @@ gulp.task('build-js', function() {
 
     // Bootstrap js files
     gulp.src([
-        'Resources/Private/Assets/JavaScript/jquery.js',
         'Resources/Private/Assets/JavaScript/bootstrap.js'
     ])
         .pipe(sourcemaps.init())
@@ -90,7 +89,6 @@ gulp.task('build-js', function() {
 
     // Bootstrap backend full js files
     gulp.src([
-        'Resources/Private/Assets/JavaScript/jquery.js',
         'Resources/Private/Assets/JavaScript/bootstrap-backend-full.js'
     ])
         .pipe(sourcemaps.init())
@@ -103,7 +101,6 @@ gulp.task('build-js', function() {
 
     // Bootstrap backend half js files
     gulp.src([
-        'Resources/Private/Assets/JavaScript/jquery.js',
         'Resources/Private/Assets/JavaScript/bootstrap-backend-half.js'
     ])
         .pipe(sourcemaps.init())

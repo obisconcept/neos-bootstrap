@@ -4,7 +4,6 @@ Besides it integrates some Bootstrap based node types.
 
 ## Packages
 - Twitter Bootstrap 3.3.6
-- jQuery 2.2.4
 - Font Awesome 4.6.3
 
 ## Installation
