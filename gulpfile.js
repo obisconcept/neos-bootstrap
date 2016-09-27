@@ -7,8 +7,9 @@ var gulp  = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     autoprefixer = require('gulp-autoprefixer'),
-    notify = require('gulp-notify'),
     watch = require('gulp-watch'),
+    notify = require('gulp-notify'),
+    plumber = require('gulp-plumber'),
     cleanCSS = require('gulp-clean-css');
 
 // Create build css task
@@ -16,8 +17,18 @@ gulp.task('build-css', function() {
 
     gutil.log('Generate css files ...');
 
-    // Bootstrap main css files
+    var onError = function(err) {
+        notify.onError({
+            title:    'Gulp',
+            subtitle: 'Failure!',
+            message:  'Error: <%= error.message %>',
+            sound:    'Beep'
+        })(err);
+        this.emit('end');
+    };
+
     gulp.src('Resources/Private/Assets/Styles/main.scss')
+        .pipe(plumber({errorHandler: onError}))
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(gulp.dest('Resources/Public/Styles'))
@@ -30,8 +41,8 @@ gulp.task('build-css', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('Resources/Public/Styles'));
 
-    // Bootstrap main backend half css files
     gulp.src('Resources/Private/Assets/Styles/main-backend-half.scss')
+        .pipe(plumber({errorHandler: onError}))
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(gulp.dest('Resources/Public/Styles'))
@@ -44,8 +55,8 @@ gulp.task('build-css', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('Resources/Public/Styles'));
 
-    // Bootstrap main backend full css files
     gulp.src('Resources/Private/Assets/Styles/main-backend-full.scss')
+        .pipe(plumber({errorHandler: onError}))
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(gulp.dest('Resources/Public/Styles'))
@@ -56,7 +67,11 @@ gulp.task('build-css', function() {
             cascade: false
         }))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('Resources/Public/Styles'));
+        .pipe(gulp.dest('Resources/Public/Styles'))
+        .pipe(notify({
+            'title': 'Gulp',
+            'message': 'CSS files were generated'
+        }));
 
 });
 
@@ -65,20 +80,23 @@ gulp.task('build-js', function() {
 
     gutil.log('Generate js files ...');
 
-    // Backend js files
-    gulp.src('Resources/Private/Assets/JavaScript/backend.js')
-        .pipe(sourcemaps.init())
-        .pipe(concat('backend.js'))
-        .pipe(gulp.dest('Resources/Public/JavaScript'))
-        .pipe(rename('backend.min.js'))
-        .pipe(uglify())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('Resources/Public/JavaScript'));
+    var onError = function(err) {
+        notify.onError({
+            title:    'Gulp',
+            subtitle: 'Failure!',
+            message:  'Error: <%= error.message %>',
+            sound:    'Beep'
+        })(err);
+        this.emit('end');
+    };
 
-    // Bootstrap js files
+    // Website js files
     gulp.src([
-        'Resources/Private/Assets/JavaScript/bootstrap.js'
-    ])
+            'Resources/Private/Assets/JavaScript/**/!(main)*.js',
+            '!' + 'Resources/Private/Assets/JavaScript/backend.js',
+            'Resources/Private/Assets/JavaScript/main.js'
+        ])
+        .pipe(plumber({errorHandler: onError}))
         .pipe(sourcemaps.init())
         .pipe(concat('bootstrap.js'))
         .pipe(gulp.dest('Resources/Public/JavaScript'))
@@ -87,26 +105,15 @@ gulp.task('build-js', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('Resources/Public/JavaScript'));
 
-    // Bootstrap backend full js files
+    // Backend js files
     gulp.src([
-        'Resources/Private/Assets/JavaScript/bootstrap-backend-full.js'
-    ])
+            'Resources/Private/Assets/JavaScript/backend.js'
+        ])
+        .pipe(plumber({errorHandler: onError}))
         .pipe(sourcemaps.init())
-        .pipe(concat('bootstrap-backend-full.js'))
+        .pipe(concat('backend.js'))
         .pipe(gulp.dest('Resources/Public/JavaScript'))
-        .pipe(rename('bootstrap-backend-full.min.js'))
-        .pipe(uglify())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('Resources/Public/JavaScript'));
-
-    // Bootstrap backend half js files
-    gulp.src([
-        'Resources/Private/Assets/JavaScript/bootstrap-backend-half.js'
-    ])
-        .pipe(sourcemaps.init())
-        .pipe(concat('bootstrap-backend-half.js'))
-        .pipe(gulp.dest('Resources/Public/JavaScript'))
-        .pipe(rename('bootstrap-backend-half.min.js'))
+        .pipe(rename('backend.min.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('Resources/Public/JavaScript'));
@@ -121,10 +128,6 @@ gulp.task('default', function() {
     gulp.src('Resources/Private/Assets/Styles/**/*.scss', {read: false})
         .pipe(watch('Resources/Private/Assets/Styles/**/*.scss', function() {
             gulp.start('build-css');
-        }))
-        .pipe(notify({
-            'title': 'Neos CMS Bootstrap Package',
-            'message': 'CSS files were generated'
         }));
 
     gulp.src('Resources/Private/Assets/JavaScript/**/*.js', {read: false})
@@ -132,7 +135,7 @@ gulp.task('default', function() {
             gulp.start('build-js');
         }))
         .pipe(notify({
-            'title': 'Neos CMS Bootstrap Package',
+            'title': 'Gulp',
             'message': 'JavaScript files were generated'
         }));
 
