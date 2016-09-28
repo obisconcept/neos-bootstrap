@@ -5,13 +5,13 @@
     <f:switch expression="{linkUriSchema}">
         <f:case value="node">
             <neos:link.node node="{linkUriConverted}" class="btn btn-default" title="{label -> f:format.raw()}" absolute="TRUE">
-                <span>{label}</span><i class="pull-{iconPosition} fa {icon}"></i>
+                <span>{label}</span> <i class="pull-{iconPosition} fa {icon}"></i>
                 <div class="clearfix"></div>
             </neos:link.node>
         </f:case>
         <f:defaultCase>
             <a href="{link}" class="btn btn-default pull-{buttonPosition}" title="{label -> f:format.raw()}">
-                <span>{label}</span><i class="pull-{iconPosition} fa {icon}"></i>
+                <span>{label}</span> <i class="pull-{iconPosition} fa {icon}"></i>
                 <div class="clearfix"></div>
             </a>
         </f:defaultCase>

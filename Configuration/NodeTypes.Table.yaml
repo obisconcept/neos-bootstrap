@@ -4,7 +4,7 @@
     'TYPO3.Neos.NodeTypes:TextMixin': TRUE
   ui:
     label: i18n
-    icon: 'icon-table'
+    icon: 'fa fa-table'
     group: 'general'
   properties:
     text:

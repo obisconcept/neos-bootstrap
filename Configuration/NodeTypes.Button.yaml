@@ -3,12 +3,14 @@
     'TYPO3.Neos:Content': TRUE
   ui:
     label: i18n
-    icon: 'icon-external-link'
+    icon: 'fa fa-external-link'
     inlineEditable: FALSE
     inspector:
       groups:
         properties:
           label: i18n
+          icon: 'fa fa-cog'
+          position: 10
   properties:
     label:
       type: string
