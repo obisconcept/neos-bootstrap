@@ -1,5 +1,10 @@
 @import 'bootstrap-backend-half.scss';
 @import 'font-awesome.scss';
+
+$sm-view: 1089px;
+$md-view: 1313px;
+$lg-view: 1521px;
+
 @import 'basic.scss';
 @import 'table.scss';
 @import 'button.scss';

@@ -3,7 +3,7 @@ A Neos CMS package to integrate Twitter Bootstrap and Font Awesome.
 Besides it integrates some Bootstrap based node types.
 
 ## Packages
-- Twitter Bootstrap 3.3.6
+- Twitter Bootstrap 3.3.7
 - Font Awesome 4.6.3
 
 ## Installation
