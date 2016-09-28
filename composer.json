@@ -16,7 +16,7 @@
     "require": {
         "typo3/neos": "~2.3.0",
         "typo3/neos-nodetypes": "~2.3.0",
-        "obisconcept/neos-jquery": "dev-master"
+        "obisconcept/neos-jquery": "~1.0.0"
     },
     "autoload": {
         "psr-0": {
