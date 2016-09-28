@@ -1,15 +1,15 @@
 /*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=111b8158116966a9e3067afe424f0353)
- * Config saved to config.json and https://gist.github.com/111b8158116966a9e3067afe424f0353
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=3f37d39b29cecd727eca0143b5f15de6)
+ * Config saved to config.json and https://gist.github.com/3f37d39b29cecd727eca0143b5f15de6
  */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -253,8 +253,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../Fonts/glyphicons-halflings-regular.eot");
-  src: url("../Fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../Fonts/glyphicons-halflings-regular.woff") format("woff"), url("../Fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../Fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -1094,7 +1094,6 @@ a:focus {
   text-decoration: underline; }
 
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -2356,7 +2355,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -2831,7 +2829,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -8720,7 +8717,7 @@ th {
   display: block;
   width: 100%; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1410px) {
   .obisconcept-bootstrap-table {
     width: 100%;
     margin-bottom: 15px;
@@ -8745,19 +8742,26 @@ th {
   margin-right: 0px;
   margin-left: 10px; }
 
-.btn {
+.obisconcept-bootstrap-button .btn {
   line-height: 14px; }
 
-.nav-pills.nav-tabs > li > a,
-.nav-pills.nav-stacked > li > a,
-.nav-pills.nav-justified > li > a {
-  border-radius: 0px; }
+.nav-tabs {
+  margin-bottom: 15px; }
 
-.nav-pills.nav-tabs > li > a,
-.nav-pills.nav-justified > li > a {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px; }
-
-.nav-pills.nav-stacked > li > a {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
+.nav-tabs.nav-stacked {
+  padding-right: 0;
+  border-bottom-color: transparent; }
+  .nav-tabs.nav-stacked > li > a {
+    margin-right: -1px;
+    border-right-color: transparent;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 4px; }
+    .nav-tabs.nav-stacked > li > a:hover {
+      border-color: #eee #ddd #eee #eee; }
+  .nav-tabs.nav-stacked > li.active > a {
+    border-bottom-color: #ddd; }
+    .nav-tabs.nav-stacked > li.active > a:hover {
+      border-color: #eee #ddd #eee #eee; }
+  .nav-tabs.nav-stacked + .tab-collection {
+    border-left: 1px solid #ddd; }

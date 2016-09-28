@@ -11,11 +11,12 @@
     "support": {
         "email": "dev@obis-concept.de"
     },
-    "description": "A Neos CMS package to integrate Twitter Bootstrap, jQuery and Font Awesome. Besides it integrates some Bootstrap based node types.",
+    "description": "A Neos CMS package to integrate Twitter Bootstrap and Font Awesome. Besides it integrates some Bootstrap based node types.",
     "license": ["MIT"],
     "require": {
         "typo3/neos": "~2.3.0",
-        "typo3/neos-nodetypes": "~2.3.0"
+        "typo3/neos-nodetypes": "~2.3.0",
+        "obisconcept/neos-jquery": "dev-master"
     },
     "autoload": {
         "psr-0": {

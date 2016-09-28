@@ -39,7 +39,6 @@ prototype(TYPO3.Neos:Page) {
             @position = 'before javascripts'
             tagName = 'script'
             attributes {
-                id = 'bootstrap-js'
                 type = 'text/javascript'
                 src = TYPO3.TypoScript:ResourceUri {
                     path = 'resource://ObisConcept.NeosBootstrap/Public/JavaScript/bootstrap.min.js'

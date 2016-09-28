@@ -1,5 +1,10 @@
 @import 'bootstrap.scss';
 @import 'font-awesome.scss';
+
+$sm-view: 768px;
+$md-view: 992px;
+$lg-view: 1200px;
+
 @import 'basic.scss';
 @import 'table.scss';
 @import 'button.scss';
