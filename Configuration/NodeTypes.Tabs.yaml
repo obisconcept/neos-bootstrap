@@ -61,6 +61,12 @@
     label: i18n
     icon: 'fa fa-square-o'
     inlineEditable: TRUE
+    inspector:
+      groups:
+        'properties':
+          label: i18n
+          icon: 'fa fa-cog'
+          position: 10
   properties:
     title:
       type: string
