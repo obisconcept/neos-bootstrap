@@ -14,13 +14,13 @@
     "description": "A Neos CMS package to integrate Twitter Bootstrap and Font Awesome. Besides it integrates some Bootstrap based node types.",
     "license": ["MIT"],
     "require": {
-        "typo3/neos": "~2.3.0",
-        "typo3/neos-nodetypes": "~2.3.0",
+        "neos/neos": "~3.0.0",
+        "neos/nodetypes": "~3.0.0",
         "obisconcept/neos-jquery": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "ObisConcept\\NeosBootstrap": "Classes"
+        "psr-4": {
+            "ObisConcept\\NeosBootstrap\\": "Classes"
         }
     }
 }
