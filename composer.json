@@ -1,6 +1,6 @@
 {
     "name": "obisconcept/neos-bootstrap",
-    "type": "typo3-flow-plugin",
+    "type": "neos-flow-plugin",
     "authors": [
         {
             "name": "obis|CONCEPT GmbH & Co. KG",
