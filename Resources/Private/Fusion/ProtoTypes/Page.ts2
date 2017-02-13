@@ -1,8 +1,8 @@
-prototype(TYPO3.Neos:Page) {
+prototype(Neos.Neos:Page) {
 
     head {
 
-        metaViewPort = TYPO3.TypoScript:Tag {
+        metaViewPort = Neos.Fusion:Tag {
             @position = 'after characterSetMetaTag'
             tagName = 'meta'
             attributes {
@@ -11,7 +11,7 @@ prototype(TYPO3.Neos:Page) {
             }
         }
 
-        metaIeEdge = TYPO3.TypoScript:Tag {
+        metaIeEdge = Neos.Fusion:Tag {
 
             @position = 'after metaViewPort'
             tagName = 'meta'
@@ -22,36 +22,36 @@ prototype(TYPO3.Neos:Page) {
 
         }
 
-        bootstrapCss = TYPO3.TypoScript:Tag {
+        bootstrapCss = Neos.Fusion:Tag {
             @position = 'before stylesheets'
             tagName = 'link'
             attributes {
                 id = 'bootstrap-css'
                 media = 'all'
                 rel = 'stylesheet'
-                href = TYPO3.TypoScript:ResourceUri {
+                href = Neos.Fusion:ResourceUri {
                     path = 'resource://ObisConcept.NeosBootstrap/Public/Styles/main.min.css'
                 }
             }
         }
 
-        bootstrapJs = TYPO3.TypoScript:Tag {
+        bootstrapJs = Neos.Fusion:Tag {
             @position = 'before javascripts'
             tagName = 'script'
             attributes {
                 type = 'text/javascript'
-                src = TYPO3.TypoScript:ResourceUri {
+                src = Neos.Fusion:ResourceUri {
                     path = 'resource://ObisConcept.NeosBootstrap/Public/JavaScript/bootstrap.min.js'
                 }
             }
         }
 
-        bootstrapBackendJs = TYPO3.TypoScript:Tag {
+        bootstrapBackendJs = Neos.Fusion:Tag {
             @position = 'after bootstrapJs'
             tagName = 'script'
             attributes {
                 type = 'text/javascript'
-                src = TYPO3.TypoScript:ResourceUri {
+                src = Neos.Fusion:ResourceUri {
                     path = 'resource://ObisConcept.NeosBootstrap/Public/JavaScript/backend.min.js'
                 }
             }

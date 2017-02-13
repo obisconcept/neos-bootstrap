@@ -1,10 +1,11 @@
-TYPO3:
-  Neos:
-    typoScript:
-      autoInclude:
-        'ObisConcept.NeosBootstrap': TRUE
 
+Neos:
+  Neos:
     userInterface:
       translation:
         autoInclude:
-          'ObisConcept.NeosBootstrap': ['NodeTypes/*']
+          ObisConcept.NeosBootstrap:
+            - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        ObisConcept.NeosBootstrap: true

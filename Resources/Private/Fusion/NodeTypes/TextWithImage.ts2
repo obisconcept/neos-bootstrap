@@ -1,4 +1,4 @@
-prototype(TYPO3.Neos.NodeTypes:TextWithImage) {
+prototype(Neos.NodeTypes:TextWithImage) {
 
     templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/TextWithImage.html'
 

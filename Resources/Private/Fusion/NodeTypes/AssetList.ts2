@@ -1,4 +1,4 @@
-prototype(TYPO3.Neos.NodeTypes:AssetList) {
+prototype(Neos.NodeTypes:AssetList) {
 
     templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/AssetList.html'
 

@@ -1,4 +1,4 @@
-prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+prototype(Neos.NodeTypes:MultiColumnItem) {
 
     @override.colCount = ${String.split(q(node).parent().property('layout'), '-')[multiColumnIteration.index]}
 
@@ -6,13 +6,13 @@ prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
 
 }
 
-prototype(ObisConcept.NeosBootstrap:FourColumnItem) < prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+prototype(ObisConcept.NeosBootstrap:FourColumnItem) < prototype(Neos.NodeTypes:MultiColumnItem) {
 
     attributes.class = ${'col-sm-' + String.toString(String.toInteger(colCount) + 3) + ' col-md-' + String.toString(String.toInteger(colCount) + 1) + ' col-lg-' + colCount}
 
 }
 
-prototype(ObisConcept.NeosBootstrap:SixColumnItem) < prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+prototype(ObisConcept.NeosBootstrap:SixColumnItem) < prototype(Neos.NodeTypes:MultiColumnItem) {
 
     attributes.class = ${'col-xs-' + String.toString(String.toInteger(colCount) + 4) + ' col-sm-' + String.toString(String.toInteger(colCount) + 2) + ' col-md-' + String.toString(String.toInteger(colCount) + 1) + ' col-lg-' + colCount}
 

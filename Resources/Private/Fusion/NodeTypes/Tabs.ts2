@@ -1,4 +1,4 @@
-prototype(ObisConcept.NeosBootstrap:Tabs) < prototype(TYPO3.Neos:Content) {
+prototype(ObisConcept.NeosBootstrap:Tabs) < prototype(Neos.Neos:Content) {
 
     templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Tabs.html'
 
@@ -28,13 +28,13 @@ prototype(ObisConcept.NeosBootstrap:Tabs) < prototype(TYPO3.Neos:Content) {
 
 }
 
-prototype(ObisConcept.NeosBootstrap:TabCollection) < prototype(TYPO3.Neos:ContentCollection)
+prototype(ObisConcept.NeosBootstrap:TabCollection) < prototype(Neos.Neos:ContentCollection)
 
-prototype(ObisConcept.NeosBootstrap:Tab) < prototype(TYPO3.Neos:Content) {
+prototype(ObisConcept.NeosBootstrap:Tab) < prototype(Neos.Neos:Content) {
 
     templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Tab.html'
 
-    contentCollection = TYPO3.Neos:ContentCollection {
+    contentCollection = Neos.Neos:ContentCollection {
 
         nodePath = 'contentCollection'
 

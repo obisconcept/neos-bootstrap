@@ -1,4 +1,4 @@
-'TYPO3.Neos.NodeTypes:TextMixin':
+'Neos.NodeTypes:TextMixin':
   properties:
     text:
       ui:

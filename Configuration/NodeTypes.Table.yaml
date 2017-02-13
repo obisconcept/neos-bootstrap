@@ -1,20 +1,21 @@
+
 'ObisConcept.NeosBootstrap:Table':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
-    'TYPO3.Neos.NodeTypes:TextMixin': TRUE
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes:TextMixin': true
   ui:
     label: i18n
     icon: 'fa fa-table'
-    group: 'general'
+    group: general
   properties:
     text:
       defaultValue: '<table><tbody><tr><th>Text</th><th>Text</th></tr><tr><td>Text</td><td>Text</td></tr></tbody></table>'
       ui:
         aloha:
           placeholder: ''
-          autoparagraph: FALSE
-          'format': FALSE
-          'table':
-            'table': TRUE
-          'list': FALSE
-          'link': FALSE
+          autoparagraph: false
+          format: false
+          table:
+            table: true
+          list: false
+          link: false

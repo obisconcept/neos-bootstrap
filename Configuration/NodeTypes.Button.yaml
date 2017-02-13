@@ -1,10 +1,11 @@
+
 'ObisConcept.NeosBootstrap:Button':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'Neos.Neos:Content': true
   ui:
     label: i18n
     icon: 'fa fa-external-link'
-    inlineEditable: FALSE
+    inlineEditable: false
     inspector:
       groups:
         properties:
@@ -14,26 +15,26 @@
   properties:
     label:
       type: string
-      defaultValue: 'Text'
+      defaultValue: Text
       ui:
         label: i18n
-        inlineEditable: FALSE
-        reloadIfChanged: TRUE
+        inlineEditable: false
+        reloadIfChanged: true
         inspector:
-          group: 'properties'
+          group: properties
         aloha:
           placeholder: i18n
-          autoparagraph: FALSE
+          autoparagraph: false
     buttonPosition:
       type: string
-      defaultValue: 'left'
+      defaultValue: left
       ui:
         label: i18n
-        inlineEditable: FALSE
-        reloadIfChanged: TRUE
+        inlineEditable: false
+        reloadIfChanged: true
         inspector:
-          group: 'properties'
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          group: properties
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               left:
@@ -44,55 +45,55 @@
       type: string
       ui:
         label: i18n
-        inlineEditable: FALSE
-        reloadIfChanged: TRUE
+        inlineEditable: false
+        reloadIfChanged: true
         inspector:
-          group: 'properties'
-          editor: 'TYPO3.Neos/Inspector/Editors/LinkEditor'
+          group: properties
+          editor: Neos.Neos/Inspector/Editors/LinkEditor
           editorOptions:
             placeholder: i18n
     icon:
       type: string
-      defaultValue: 'fa-chevron-left'
+      defaultValue: fa-chevron-left
       ui:
         label: i18n
-        inlineEditable: FALSE
-        reloadIfChanged: TRUE
+        inlineEditable: false
+        reloadIfChanged: true
         inspector:
-          group: 'properties'
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          group: properties
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
-              'fa-chevron-left':
+              fa-chevron-left:
                 label: i18n
-              'fa-chevron-right':
+              fa-chevron-right:
                 label: i18n
-              'fa-phone':
+              fa-phone:
                 label: i18n
-              'fa-paper-plane':
+              fa-paper-plane:
                 label: i18n
-              'fa-facebook':
-                label: 'Facebook'
-              'fa-google-plus':
-                label: 'Google+'
-              'fa-twitter':
-                label: 'Twitter'
-              'fa-linkedin':
-                label: 'LinkedIn'
-              'fa-pinterest-p':
-                label: 'Pinterest'
-              'fa-vimeo':
-                label: 'Vimeo'
+              fa-facebook:
+                label: Facebook
+              fa-google-plus:
+                label: Google+
+              fa-twitter:
+                label: Twitter
+              fa-linkedin:
+                label: LinkedIn
+              fa-pinterest-p:
+                label: Pinterest
+              fa-vimeo:
+                label: Vimeo
     iconPosition:
       type: string
-      defaultValue: 'left'
+      defaultValue: left
       ui:
         label: i18n
-        inlineEditable: FALSE
-        reloadIfChanged: TRUE
+        inlineEditable: false
+        reloadIfChanged: true
         inspector:
-          group: 'properties'
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          group: properties
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               left:

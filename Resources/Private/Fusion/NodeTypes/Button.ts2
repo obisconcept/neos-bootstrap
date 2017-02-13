@@ -1,4 +1,4 @@
-prototype(ObisConcept.NeosBootstrap:Button) < prototype(TYPO3.Neos:Content) {
+prototype(ObisConcept.NeosBootstrap:Button) < prototype(Neos.Neos:Content) {
 
     templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Button.html'
 

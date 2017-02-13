@@ -1,4 +1,4 @@
-prototype(TYPO3.Neos.NodeTypes:Image) {
+prototype(Neos.NodeTypes:Image) {
 
     templatePath = 'resource://ObisConcept.NeosBootstrap/Private/Templates/NodeTypes/Image.html'
 

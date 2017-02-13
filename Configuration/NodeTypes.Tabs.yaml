@@ -1,84 +1,82 @@
+
 'ObisConcept.NeosBootstrap:Tabs':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'Neos.Neos:Content': true
   childNodes:
     tabCollection:
       type: 'ObisConcept.NeosBootstrap:TabCollection'
   constraints:
     nodeTypes:
-      '*': FALSE
+      '*': false
   ui:
     label: i18n
     icon: 'fa fa-columns'
-    inlineEditable: TRUE
+    inlineEditable: true
     inspector:
       groups:
-        'properties':
+        properties:
           label: i18n
           icon: 'fa fa-cog'
           position: 10
   properties:
     tabsStyle:
       type: string
-      defaultValue: 'horizontal'
+      defaultValue: horizontal
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
-          group: 'properties'
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          group: properties
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             placeholder: i18n
             values:
-              'horizontal':
+              horizontal:
                 label: i18n
-              'vertical':
+              vertical:
                 label: i18n
-              'justified':
+              justified:
                 label: i18n
-
 'ObisConcept.NeosBootstrap:TabCollection':
   superTypes:
-    'TYPO3.Neos:ContentCollection': TRUE
+    'Neos.Neos:ContentCollection': true
   childNodes:
     tabOne:
       type: 'ObisConcept.NeosBootstrap:Tab'
   constraints:
     nodeTypes:
-      'ObisConcept.NeosBootstrap:Tab': TRUE
-      '*': FALSE
-
+      'ObisConcept.NeosBootstrap:Tab': true
+      '*': false
 'ObisConcept.NeosBootstrap:Tab':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'Neos.Neos:Content': true
   childNodes:
     contentCollection:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
   constraints:
     nodeTypes:
-      '*': FALSE
+      '*': false
   ui:
     label: i18n
     icon: 'fa fa-square-o'
-    inlineEditable: TRUE
+    inlineEditable: true
     inspector:
       groups:
-        'properties':
+        properties:
           label: i18n
           icon: 'fa fa-cog'
           position: 10
   properties:
     title:
       type: string
-      defaultValue: 'Tab'
+      defaultValue: Tab
       ui:
         label: i18n
-        inlineEditable: TRUE
-        reloadIfChanged: TRUE
+        inlineEditable: true
+        reloadIfChanged: true
         inspector:
-          group: 'properties'
-
-'TYPO3.Neos:ContentCollection':
+          group: properties
+'Neos.Neos:ContentCollection':
   constraints:
     nodeTypes:
-      'ObisConcept.NeosBootstrap:Tab': FALSE
+      'ObisConcept.NeosBootstrap:Tab': false

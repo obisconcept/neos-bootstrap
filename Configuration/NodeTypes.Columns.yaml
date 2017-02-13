@@ -1,86 +1,84 @@
-'TYPO3.Neos.NodeTypes:TwoColumn':
+
+'Neos.NodeTypes:TwoColumn':
   properties:
-    'layout':
-      defaultValue: '6-6'
+    layout:
+      defaultValue: 6-6
       ui:
         inspector:
           editorOptions:
             values:
-              '50-50': ~
-              '75-25': ~
-              '25-75': ~
-              '66-33': ~
-              '33-66': ~
-              '6-6':
+              50-50: null
+              75-25: null
+              25-75: null
+              66-33: null
+              33-66: null
+              6-6:
                 label: '50% / 50%'
-              '9-3':
+              9-3:
                 label: '75% / 25%'
-              '3-9':
+              3-9:
                 label: '25% / 75%'
-              '8-4':
+              8-4:
                 label: '66% / 33%'
-              '4-8':
+              4-8:
                 label: '33% / 66%'
-
-'TYPO3.Neos.NodeTypes:ThreeColumn':
+'Neos.NodeTypes:ThreeColumn':
   properties:
-    'layout':
-      defaultValue: '4-4-4'
+    layout:
+      defaultValue: 4-4-4
       ui:
         inspector:
           editorOptions:
             values:
-              '33-33-33': ~
-              '50-25-25': ~
-              '25-50-25': ~
-              '25-25-50': ~
-              '4-4-4':
+              33-33-33: null
+              50-25-25: null
+              25-50-25: null
+              25-25-50: null
+              4-4-4:
                 label: '33% / 33% / 33%'
-              '6-3-3':
+              6-3-3:
                 label: '50% / 25% / 25%'
-              '3-6-3':
+              3-6-3:
                 label: '25% / 50% / 25%'
-              '3-3-6':
+              3-3-6:
                 label: '25% / 25% / 50%'
-
-'TYPO3.Neos.NodeTypes:FourColumn':
+'Neos.NodeTypes:FourColumn':
   properties:
-    'layout':
-      defaultValue: '3-3-3-3'
+    layout:
+      defaultValue: 3-3-3-3
       ui:
         inspector:
           editorOptions:
             values:
-              '25-25-25-25': ~
-              '3-3-3-3':
+              25-25-25-25: null
+              3-3-3-3:
                 label: '25% / 25% / 25% / 25%'
-
 'ObisConcept.NeosBootstrap:SixColumn':
   superTypes:
-    'TYPO3.Neos.NodeTypes:Column': TRUE
+    'Neos.NodeTypes:Column': true
   ui:
     label: i18n
     position: 600
   childNodes:
     column0:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
     column1:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
     column2:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
     column3:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
     column4:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
     column5:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
   properties:
     layout:
-      defaultValue: '2-2-2-2-2-2'
+      defaultValue: 2-2-2-2-2-2
       ui:
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           editorOptions:
             values:
-              '2-2-2-2-2-2':
+              2-2-2-2-2-2:
                 label: '16% / 16% / 16% / 16% / 16% / 16%'
