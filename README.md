@@ -4,13 +4,13 @@ Besides it integrates some Bootstrap based node types.
 
 ## Packages
 - Twitter Bootstrap 3.3.7
-- Font Awesome 4.6.3
+- Font Awesome 4.7
 
 ## Installation
 Add the package in your site package composer.json
 
 ```
 "require": {
-     "obisconcept/neos-bootstrap": "~1.0.0"
+     "obisconcept/neos-bootstrap": "~2.0.0"
  }
  ```
