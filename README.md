@@ -4,7 +4,7 @@ Besides it integrates some Bootstrap based node types.
 
 ## Packages
 - Twitter Bootstrap 3.3.7
-- Font Awesome 4.6.3
+- Font Awesome 4.7.0
 
 ## Installation
 Add the package in your site package composer.json
