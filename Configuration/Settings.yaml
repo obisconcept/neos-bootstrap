@@ -1,4 +1,5 @@
-
+ObisConcept:
+  includeFrontendAssets: true
 Neos:
   Neos:
     userInterface:
