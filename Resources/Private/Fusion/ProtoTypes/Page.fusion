@@ -33,6 +33,7 @@ prototype(Neos.Neos:Page) {
                     path = 'resource://ObisConcept.NeosBootstrap/Public/Styles/main.min.css'
                 }
             }
+            @if.includeFrontendAssets = ${Configuration.setting('ObisConcept.includeFrontendAssets')}
         }
 
         bootstrapJs = Neos.Fusion:Tag {
@@ -44,6 +45,7 @@ prototype(Neos.Neos:Page) {
                     path = 'resource://ObisConcept.NeosBootstrap/Public/JavaScript/bootstrap.min.js'
                 }
             }
+            @if.includeFrontendAssets = ${Configuration.setting('ObisConcept.includeFrontendAssets')}
         }
 
         bootstrapBackendJs = Neos.Fusion:Tag {
@@ -56,6 +58,7 @@ prototype(Neos.Neos:Page) {
                 }
             }
             @if.onlyRenderWhenNotInLiveWorkspace = ${node.context.workspace.name != 'live'}
+            @if.includeFrontendAssets = ${Configuration.setting('ObisConcept.includeFrontendAssets')}
         }
 
     }
