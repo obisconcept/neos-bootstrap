@@ -22,9 +22,10 @@
         reloadIfChanged: true
         inspector:
           group: properties
-        aloha:
-          placeholder: i18n
-          autoparagraph: false
+        inline:
+          editorOptions:
+            autoparagraph: false
+            placeholder: i18n
     buttonPosition:
       type: string
       defaultValue: left

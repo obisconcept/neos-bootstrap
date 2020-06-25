@@ -11,11 +11,9 @@
     text:
       defaultValue: '<table><tbody><tr><th>Text</th><th>Text</th></tr><tr><td>Text</td><td>Text</td></tr></tbody></table>'
       ui:
-        aloha:
-          placeholder: ''
-          autoparagraph: false
-          format: false
-          table:
-            table: true
-          list: false
-          link: false
+        inline:
+          editorOptions:
+            formatting:
+              table: true
+            autoparagraph: false
+            placeholder: ''

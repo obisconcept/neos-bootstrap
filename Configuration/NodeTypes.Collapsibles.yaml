@@ -39,8 +39,9 @@
       type: string
       ui:
         inlineEditable: true
-        aloha:
-          placeholder: i18n
+        inline:
+          editorOptions:
+            placeholder: i18n
 'Neos.Neos:ContentCollection':
   constraints:
     nodeTypes:

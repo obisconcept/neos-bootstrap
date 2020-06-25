@@ -1,6 +1,7 @@
+
 'Neos.NodeTypes:TextMixin':
   properties:
     text:
       ui:
-        aloha:
-          'table': FALSE
+        inline:
+          editorOptions: {  }
