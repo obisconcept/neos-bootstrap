@@ -16,8 +16,8 @@
         "MIT"
     ],
     "require": {
-        "neos/neos": "^3.0.0",
-        "neos/nodetypes": "^3.0.0"
+        "neos/neos": "^4.0.0",
+        "neos/nodetypes": "^4.0.0"
     },
     "suggest": {
         "obisconcept/neos-jquery": "Add this package, if you don't use obisconcept/neos-bootstrap package or if you don't inluded jQuery by yourself"
