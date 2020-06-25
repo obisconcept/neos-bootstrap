@@ -4,7 +4,7 @@ prototype(ObisConcept.NeosBootstrap:Collapsibles) < prototype(Neos.Neos:Content)
 
     content {
 
-    		collapsibleCollection = ContentCollection {
+    		collapsibleCollection = Neos.Neos:ContentCollection {
       			nodePath = 'collapsibleCollection'
       			attributes.class = 'panel-group'
       			attributes.id = ${q(node).parent().property('_identifier')}
