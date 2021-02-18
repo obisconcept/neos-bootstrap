@@ -73,7 +73,6 @@
       defaultValue: 'Tab'
       ui:
         label: i18n
-        inlineEditable: TRUE
         reloadPageIfChanged: TRUE
         inspector:
           group: 'properties'
