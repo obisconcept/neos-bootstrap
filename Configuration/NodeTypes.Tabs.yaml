@@ -72,7 +72,6 @@
       defaultValue: Tab
       ui:
         label: i18n
-        inlineEditable: true
         reloadPageIfChanged: true
         inspector:
           group: properties
